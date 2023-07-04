@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Okra, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+/* hr {
+  border: 0.3px solid #efefef;
+  border-bottom: none;
+  margin: 5px 0px;
+} */
+
+header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 30px;
+  font-family: Okra, Helvetica, sans-serif;
+}
+
+header > h1 {
+  font-weight: bold;
+}
+
+.location-header {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  font-size: 30px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0px 10px;
+  width: 600px;
+  height: 50px;
+  box-shadow: 0.5px 0.5px 2px gray;
+}
+
+.location-header input {
+  border: none;
+  margin-right: 20px;
+  width: 100%;
+}
+
+.location-image {
+  font-size: 0.5em;
+}
+
+.services:hover {
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+nav a span {
+  font-size: 18px;
+  font-weight: 100;
+  color: #696969;
+}
+
+nav {
+  margin-right: 50px;
+}
+
+nav a span:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.search-image {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 15px;
+  color: #828282;
+  border-left: 1px solid #cfcfcf;
+  padding: 0px 5px;
+}
+
+.search-input {
+  width: 100%;
+  padding-bottom: 10px;
+  /* overflow: scroll; */
+}
+
+.input-header {
+  padding-bottom: 10px;
+}
+
+.dropdown-image {
+  padding-bottom: 0.5rem;
+}
+
+/* SERVICES SECTION */
+
+.type-of-services {
+  margin-left: 180px;
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Okra, Helvetica, sans-serif;
+  color: #696969;
+}
+
+.image-background {
+  background-color: rgb(248, 248, 248);
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services:hover {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+/* CUSTOMER OPTIONS */
+
+.fixed-head {
+  position: sticky;
+  background-color: #ffffff;
+  top: 0px;
+  padding: 20px 0px;
+  box-shadow: 0 -0.1px gray;
+  display: grid;
+  grid-auto-columns: 1fr;
+}
+
+.customer-options {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 190px;
+  margin-top: 30px;
+  color: #9d9d9d;
+  font-weight: 100;
+}
+
+.filter {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.options {
+  box-shadow: 0.5px 0.5px 2px gray;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.options:hover {
+  cursor: pointer;
+}
+
+.cuisine {
+  display: flex;
+}
+
+/* INSPIRATIONS FOR ORDERS & TOP BRANDS */
+
+.inspiration-for-order {
+  margin-top: 30px;
+  background-color: #f8f8f8;
+  padding-bottom: 40px;
+}
+
+.top-brands {
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.inspiration-for-order img,
+.top-brands-section img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.inspiration-order-images,
+.top-brands-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 150px;
+}
+
+.first-order,
+.brands {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  place-items: center;
+}
+
+.inspiration-for-order-heading h3,
+.top-brands-heading h3 {
+  margin-left: 130px;
+  padding: 60px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.brands img {
+  box-shadow: 0.5px 0.5px 2px gray;
+  background-position: center right;
+}
+
+.brands p:nth-of-type(2) {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+/* BEST FOOD IN GUWAHATI */
+
+.delivery-resturants h3 {
+  margin-left: 130px;
+  padding: 60px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+.resturants-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  grid-template-rows: repeat(2, 1fr);
+  /* grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr; */
+  /* place-items: center; */
+  margin-left: 100px;
+}
+
+.resturant-image img {
+  height: 259px;
+  width: 320px;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+
+.resturant {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 50px;
+}
+
+.resturant:hover {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0.5px 0.5px 2px gray inset;
+}
+
+.resturant-info-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.resturant-info-1 p {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.resturant-rating {
+  background-color: #039743ee;
+  border-radius: 4px;
+  padding: 0.2rem;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.resturant-info-1 i {
+  font-size: 0.8rem;
+}
+
+.resturant-info-2 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  width: 320px;
+  margin-top: 10px;
+  display: flex;
+  gap: 120px;
+  align-items: center;
+}
+
+.resturant-info-2 p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* background-color: #696969; */
+}
+
+/* END OF SEARCH */
+
+.end-of-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  height: 400px;
+}
+
+.end-of-search .end-para p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  padding: 20px;
+  /* height: 100px; */
+  background-color: #f8f8f8;
+  width: fit-content;
+  text-align: justify;
+}
+
+footer p:nth-child(2) {
+  /* padding: 10px; */
+  text-align: center;
+}
